@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon untuk browser -->
+        <link rel="icon" href="assets/img/home.jpg" type="image/x-icon">
+        <!-- Favicon untuk mobile devices -->
+        <link rel="apple-touch-icon" href="assets/img/home.jpg">
+        <!-- Untuk favicon dalam format PNG -->
+        <link rel="icon" type="image/png" href="assets/img/home.jpg">
+        <!-- ===== SWIPER CSS ===== -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!-- ===== BOX ICONS ===== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        <!-- jquery-viewer -->
+        <link href="assets/css/viewer.css" rel="stylesheet">  
+        <!-- ===== bxslider ===== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <!-- ===== Aos ===== -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <title>Portofolio - Agus Santoso</title>
+    </head>
+    <body>
+        <!--===== SCROLL TOP =====-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bi bi-chevron-up scrolltop__icon'></i>
+        </a>
+        
+        <!--===== Menu =====-->
+        <div class="floating__menu floating__menu__left">
+            <a href="#home"><i class="bi bi-house-door"></i> <span>Home</span></a>
+            <a href="#about"><i class="bi bi-person"></i> <span>About</span></a>
+            <a href="#skills"><i class="bi bi-snow"></i> <span>Skills</span></a>
+            <a href="#project"><i class="bi bi-card-checklist"></i> <span>Project</span></a>
+            <a href="#contact"><i class="bi bi-telephone"></i> <span>Contact</span></a>
+        </div>
+
+        <div class="floating__menu floating__menu__right">
+            <a href="https://www.instagram.com/agus.santoso_"><i class="bi bi-instagram"></i> <span>Instagram</span></a>
+            <a href="https://www.linkedin.com/in/agus-santoso-526548229"><i class="bi bi-linkedin"></i> <span>Linked In</span></a>
+            <a href="https://github.com/agussantosoo"><i class="bi bi-github"></i> <span>Github</span></a>
+            <a href="assets/pdf/cv-agus-santoso"><i class="bi bi-download"></i> <span>CV</span></a>
+        </div>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, My name is</span>
+                        <span class="home__name">Agus Santoso</span>
+                        <span class="home__profession">Web Developer</span>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="assets/img/home.png" alt="">
+                    </div>
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section bd-container" id="about">
+                <span class="section-subtitle" data-aos="zoom-in-up">My history</span>
+                <h2 class="section-title" data-aos="zoom-in-up">About me</h2>
+
+                <div class="about__container">
+                    <div class="about__data" data-aos="zoom-in-up">
+                        <p style="text-align: justify;"><span>Hello, I am </span> a Web Developer focused on creating interactive and responsive web applications. With expertise in both front-end and back-end development, I am always eager to learn new technologies, adapt to challenges, and work effectively both independently and in teams.</p>
+                    </div>
+                
+                    <div class="qualification__container bd-grid mt-2">
+                        <div class="qualification__content" data-aos="fade-right">
+                            <h2 class="qualification__title">
+                                <i class='bi bi-briefcase qualification__title-icon'></i> 
+                                Work Experience
+                            </h2>
+
+                            <div class="bd-grid">
+                                <div class="qualification__data">
+                                    <h3 class="qualification__area">Programmer</h3>
+        
+                                    <div class="qualification__box">
+                                        <span class="qualification__work">
+                                            PT. Smart App Indonesia
+                                        </span>
+
+                                        <span class="qualification__work">
+                                            September 2024 - Now
+                                        </span>
+                                    </div>
+                                </div>
+        
+                                <div class="qualification__data">
+                                    <h3 class="qualification__area">Freelance Web Developer</h3>
+        
+                                    <div class="qualification__box">
+                                        <span class="qualification__work">
+                                            
+                                        </span>
+        
+                                        <span class="qualification__work">
+                                            Maret 2020 - Agustus 2024
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__content" data-aos="fade-left">
+                            <h2 class="qualification__title">
+                                <i class='bi bi-book qualification__title-icon'></i>
+                                Education
+                            </h2>
+
+                            <div class="bd-grid">
+                                <div class="qualification__data">
+                                    <h3 class="qualification__area">S1 Teknik Informatika</h3>
+        
+                                    <div class="qualification__box">
+                                        <span class="qualification__work">
+                                            <i class='bx bx-book-alt qualification__icon'></i>
+                                            Universitas Tadulako
+                                        </span>
+        
+                                        <span class="qualification__work">                                      
+                                            <i class='bx bx-calendar-alt qualification__icon'></i>
+                                            2014 - 2021
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section bd-container" id="skills">
+                <span class="section-subtitle" data-aos="zoom-in-up">My expertise</span>
+                <h2 class="section-title" data-aos="zoom-in-up">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/html5.svg" />
+                        <span class="skills__name">HTML</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/css3.svg">
+                        <span class="skills__name">CSS</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/javascript.svg">
+                        <span class="skills__name">JavaScript</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/mysql.svg">
+                        <span class="skills__name">MySQL</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/php.svg" />
+                        <span class="skills__name">PHP</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/bootstrap.svg">
+                        <span class="skills__name">Bootstrap</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/jquery.svg">
+                        <span class="skills__name">Jquery</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/git.svg">
+                        <span class="skills__name">GIT</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/github.svg">
+                        <span class="skills__name">Github</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/codeigniter.svg" />
+                        <span class="skills__name">Codeigniter</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/laravel.svg">
+                        <span class="skills__name">Laravel</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/livewire.svg">
+                        <span class="skills__name">Livewire</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/react.svg">
+                        <span class="skills__name">Reactjs</span>
+                    </div>
+                    <div class="skills__data" data-aos="flip-up">
+                        <img src="assets/img/skill/postman.svg">
+                        <span class="skills__name">Postman</span>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== Project =====-->
+            <section class="project bd-container section" id="project">
+                <span class="section-subtitle" data-aos="zoom-in-up">My works</span>
+                <h2 class="section-title" data-aos="zoom-in-up">Project</h2>
+                
+                <div class="project__nav" data-aos="flip-up">
+                    <span class="project__item active-project" data-filter="all">All</span>
+                    <span class="project__item" data-filter=".web">Web</span>
+                    <span class="project__item" data-filter=".desktop">Desktop</span>
+                    <span class="project__item" data-filter=".mobile">Mobile</span>
+                </div>
+
+                <div class="project__container bd-grid" data-aos="fade-up">
+                    <div class="project__content mix web"> 
+                        <div class="slider">
+                            <img src="assets/img/project/web-membership.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Membership.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : Laravel & Livewire</li>
+                                    <li>Site : my.siakadponpes.com </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-psb-1.png" alt="" class="project__img">
+                            <img src="assets/img/project/web-psb-2.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Pendaftaran Siswa Baru.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : Codeigniter</li>
+                                    <li>Site : psb.siakadponpes.com </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-siakad.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Sistem Informasi Akademik.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : PHP & MySQL</li>
+                                    <li>Site : dev.siakadponpes.com </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-perpus.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Sistem Informasi Perpustakaan.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : Codeigniter</li>
+                                    <li>Site : - </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-tiket.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">E-Tiket.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : PHP</li>
+                                    <li>Site : tiket </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-knn.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Klasifikasi Penyakit Scabies Pada Kambing Dengan Algoritma KNN.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : PHP & MySQL</li>
+                                    <li>Site : - </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-sawsmart.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Perbandingan Metode SAW dan SMART Untuk Sistem Pendukung Keputusan Dalam Menentukan Prioritas Perbaikan Jalan.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : PHP & MySQL</li>
+                                    <li>Site : - </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix web">
+                        <div class="slider">
+                            <img src="assets/img/project/web-promethee.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h2 class="project__title">Sistem Pendukung Keputusan Perangkingan Siswa Terbaik Dengan Algoritma PROMETHEE.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : Codeigniter</li>
+                                    <li>Site : - </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project__content mix mobile">
+                        <div class="slider">
+                            <img src="assets/img/project/siakad-mobile.png" alt="" class="project__img">
+                        </div>
+                        <div class="project__data" id="project__data">
+                            <h2 class="project__title">Sistem Informasi Akademik.</h2>
+                            <span class="project__subtitle">
+                                <ul>
+                                    <li>Tech : PHP & MySQL</li>
+                                    <li>Site : dev.siakadponpes.com </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact bd-container section" id="contact">
+                <span class="section-subtitle" data-aos="zoom-in-up">For projects</span>
+                <h2 class="section-title" data-aos="zoom-in-up">Contact Me</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__content bd-grid">
+                        <a href="https://wa.me/6282194273124" class="contact__box" data-aos="flip-up">
+                            <i class='bi bi-whatsapp contact__icon'></i>
+                            <h3 class="contact__title">Whatsapp</h3>
+                        </a>
+
+                        <a href="mailto:a.santoso370@gmail.com" class="contact__box" data-aos="flip-up">
+                            <i class='bi bi-envelope contact__icon'></i>
+                            <h3 class="contact__title">Email</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__container bd-container" >
+                <p class="footer__copy">&#169; <span id="year"></span> Agus Santoso. All right reserved</p>
+            </div>
+        </footer>
+                
+        <!-- ===== MIXITUP FILTER ===== -->
+        <script src="assets/js/mixitup.min.js"></script>
+        
+        <!-- ===== SWIPER JS ===== -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!-- ===== GSAP ===== -->
+        <script src="assets/js/gsap.min.js"></script>
+        
+        <!-- jquery-viewer -->
+        <script src="assets/js/viewer.js"></script>
+        <script src="assets/js/jquery-viewer.js"></script>
+
+        <!-- bxslider -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

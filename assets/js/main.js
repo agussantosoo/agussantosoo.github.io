@@ -1,5 +1,7 @@
 //inisialisasi aos
-AOS.init();
+AOS.init({
+	easing: "ease-in-out-sine",
+});
 
 // Toggle class active pada .skills__data saat diklik
 $('.skills__data').on('click', function() {
@@ -40,23 +42,33 @@ gsap.from('.home__greeting, .home__name, .home__profession, .floating__menu', { 
 $('#year').text(new Date().getFullYear());
 
 // Slider
-$('.slider').each(function() {
-    $(this).bxSlider({
-        auto: true,
-        speed: 1000,
-        controls: false,
-        pager: false,
-        slideHeight: 100
-    });
+var owl = $('.slider');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[2000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+// img viewer
+$('.home__img').each(function() {
+    imgviewer(this);
 });
 
-// slider dan viewer 
-// pointer jika mouse di img-viewer dan img-slider
-$('.home__img, .project__img').css('cursor', 'pointer');
+$('.project__img').each(function() {
+    imgviewer(this);
+});
 
-// img-viewer
-$('.home__img').each(function() {
-    new Viewer(this, {
+function imgviewer(data){
+    new Viewer(data, {
         title: false,
         toolbar: {
             zoomIn: 1,
@@ -72,27 +84,23 @@ $('.home__img').each(function() {
             flipVertical: 0,
         },
     });
+}
+
+const imgslider = $('.slider');
+const sliderviewer = new Viewer(imgslider[0], {
+    title: false,
+    toolbar: {
+        zoomIn: 1,
+        zoomOut: 1,
+        oneToOne: 1,
+        reset: 1,
+        prev: 1,
+        play: 0,
+        next: 1,
+        rotateLeft: 0,
+        rotateRight: 0,
+        flipHorizontal: 0,
+        flipVertical: 0,
+    },
 });
 
-// img-slider
-$('.project__img').on('click', function() {
-    const slider = $(this).closest('.slider');
-    const imgslider = slider[0];
-    console.log(imgslider)
-    const sliderviewer = new Viewer(imgslider, {
-        title: false,
-        toolbar: {
-            zoomIn: 1,
-            zoomOut: 1,
-            oneToOne: 1,
-            reset: 1,
-            prev: 1,
-            play: 0,
-            next: 1,
-            rotateLeft: 0,
-            rotateRight: 0,
-            flipHorizontal: 0,
-            flipVertical: 0,
-        },
-    });
-});

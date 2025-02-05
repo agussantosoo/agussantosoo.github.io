@@ -5,21 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon untuk browser -->
-        <link rel="icon" href="assets/img/home.jpg" type="image/x-icon">
+        <link rel="icon" href="assets/img/home.png" type="image/x-icon">
+
         <!-- Favicon untuk mobile devices -->
-        <link rel="apple-touch-icon" href="assets/img/home.jpg">
+        <link rel="apple-touch-icon" href="assets/img/home.png">
+
         <!-- Untuk favicon dalam format PNG -->
-        <link rel="icon" type="image/png" href="assets/img/home.jpg">
+        <link rel="icon" type="image/png" href="assets/img/home.png">
+
         <!-- ===== SWIPER CSS ===== -->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
         <!-- ===== BOX ICONS ===== -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
         <!-- jquery-viewer -->
         <link href="assets/css/viewer.css" rel="stylesheet">  
-        <!-- ===== bxslider ===== -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+        <!-- ===== owl.carousel ===== -->
+        <link rel="stylesheet" href="assets/plugins/owlcarousel/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/plugins/owlcarousel/css/owl.theme.default.min.css">
+
         <!-- ===== Aos ===== -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="assets/css/aos.css"/>
+
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
         
@@ -49,7 +58,7 @@
 
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class="home" id="home">
+            <section class="home" id="home" >
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
                         <span class="home__greeting">Hello, My name is</span>
@@ -218,9 +227,7 @@
 
                 <div class="project__container bd-grid" data-aos="fade-up">
                     <div class="project__content mix web"> 
-                        <div class="slider">
-                            <img src="assets/img/project/web-membership.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-membership.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">Membership.</h2>
                             <span class="project__subtitle">
@@ -231,13 +238,13 @@
                             </span>
                         </div>
                     </div>
-
+                
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-psb-1.png" alt="" class="project__img">
-                            <img src="assets/img/project/web-psb-2.png" alt="" class="project__img">
+                        <div class="slider owl-carousel">
+                            <div><img src="assets/img/project/web-psb-1.png" alt="" class="project__imgslider"></div>
+                            <div><img src="assets/img/project/web-psb-2.png" alt="" class="project__imgslider"></div>
                         </div>
-                        <div class="project__data">
+                        <div class="project__dataslider">
                             <h2 class="project__title">Pendaftaran Siswa Baru.</h2>
                             <span class="project__subtitle">
                                 <ul>
@@ -249,9 +256,7 @@
                     </div>
 
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-siakad.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-siakad.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">Sistem Informasi Akademik.</h2>
                             <span class="project__subtitle">
@@ -264,9 +269,7 @@
                     </div>
 
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-perpus.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-perpus.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">Sistem Informasi Perpustakaan.</h2>
                             <span class="project__subtitle">
@@ -279,9 +282,7 @@
                     </div>
 
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-tiket.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-tiket.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">E-Tiket.</h2>
                             <span class="project__subtitle">
@@ -294,9 +295,7 @@
                     </div>
 
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-knn.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-knn.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">Klasifikasi Penyakit Scabies Pada Kambing Dengan Algoritma KNN.</h2>
                             <span class="project__subtitle">
@@ -309,9 +308,7 @@
                     </div>
 
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-sawsmart.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-sawsmart.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">Perbandingan Metode SAW dan SMART Untuk Sistem Pendukung Keputusan Dalam Menentukan Prioritas Perbaikan Jalan.</h2>
                             <span class="project__subtitle">
@@ -324,9 +321,7 @@
                     </div>
 
                     <div class="project__content mix web">
-                        <div class="slider">
-                            <img src="assets/img/project/web-promethee.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/web-promethee.png" alt="" class="project__img">
                         <div class="project__data">
                             <h2 class="project__title">Sistem Pendukung Keputusan Perangkingan Siswa Terbaik Dengan Algoritma PROMETHEE.</h2>
                             <span class="project__subtitle">
@@ -339,9 +334,7 @@
                     </div>
 
                     <div class="project__content mix mobile">
-                        <div class="slider">
-                            <img src="assets/img/project/siakad-mobile.png" alt="" class="project__img">
-                        </div>
+                        <img src="assets/img/project/siakad-mobile.png" alt="" class="project__img">
                         <div class="project__data" id="project__data">
                             <h2 class="project__title">Sistem Informasi Akademik.</h2>
                             <span class="project__subtitle">
@@ -357,32 +350,42 @@
 
             <!--===== CONTACT =====-->
             <section class="contact bd-container section" id="contact">
-                <span class="section-subtitle" data-aos="zoom-in-up">For projects</span>
-                <h2 class="section-title" data-aos="zoom-in-up">Contact Me</h2>
+                <span class="section-subtitle">For projects</span>
+                <h2 class="section-title" >Contact Me</h2>
 
                 <div class="contact__container bd-grid">
-                    <div class="contact__content bd-grid">
-                        <a href="https://wa.me/6282194273124" class="contact__box" data-aos="flip-up">
-                            <i class='bi bi-whatsapp contact__icon'></i>
-                            <h3 class="contact__title">Whatsapp</h3>
-                        </a>
+                    <a href="https://wa.me/6282194273124" class="contact__box">
+                        <i class='bi bi-whatsapp contact__icon'></i>
+                        <h3 class="contact__title">Whatsapp</h3>
+                    </a>
 
-                        <a href="mailto:a.santoso370@gmail.com" class="contact__box" data-aos="flip-up">
-                            <i class='bi bi-envelope contact__icon'></i>
-                            <h3 class="contact__title">Email</h3>
-                        </a>
-                    </div>
+                    <a href="mailto:a.santoso370@gmail.com" class="contact__box">
+                        <i class='bi bi-envelope contact__icon'></i>
+                        <h3 class="contact__title">Email</h3>
+                    </a>
                 </div>
             </section>
         </main>
         
+        
+
         <!--===== FOOTER =====-->
         <footer class="footer">
             <div class="footer__container bd-container" >
                 <p class="footer__copy">&#169; <span id="year"></span> Agus Santoso. All right reserved</p>
             </div>
         </footer>
-                
+        
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- owl.carousel -->
+        <script src="assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
+
+        <!-- jquery-viewer -->
+        <script src="assets/js/viewer.js"></script>
+        <script src="assets/js/jquery-viewer.js"></script>
+
         <!-- ===== MIXITUP FILTER ===== -->
         <script src="assets/js/mixitup.min.js"></script>
         
@@ -392,16 +395,8 @@
         <!-- ===== GSAP ===== -->
         <script src="assets/js/gsap.min.js"></script>
         
-        <!-- jquery-viewer -->
-        <script src="assets/js/viewer.js"></script>
-        <script src="assets/js/jquery-viewer.js"></script>
-
-        <!-- bxslider -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        
         <!-- aos -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="assets/js/aos.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
